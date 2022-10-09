@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float pi = 3.14;
+	float R, r;
+	cout << "Вычислите площадь кольца." << endl;
+	cout << "Введите исходные данные" << endl;
+	cin >> R;
+	cin >> r;
+	cout << "Радиус кольца внешний (см): " << R <<  endl;
+	cout << "Радиус кольца внутрений (см): " << r << endl;
+	cout << "Вот формула вычисление площади кольца S= pi(R^2-r^2)" << endl;
+	if (r < R)
+	{
+		cout << "Площадь(S) кольца равна: " <<  pi * (pow(R,2) - pow(r,2))  << endl;
+	}
+	else
+	{
+		cout << "Ошибка! Радиус отверстия не может быть больше радиуса кольца." << endl;
+	}
+	return 0;
+
+}
