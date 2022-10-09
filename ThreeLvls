@@ -1,0 +1,45 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	const int score = 15;
+	int ScoreLvlOne, ScoreLvlTwo, ScorelvlThree;
+	string Username;
+	cout << "Добро пожаловать игру 'Три Уровня'!" << endl;
+	cout << "Ваше имя: " << endl;
+	cin >> Username;
+	cout << "Привет " << Username << " ! " << endl;
+	cout << "И так пройдя первый уровень убив босса и несколько нежети ты получил ключи, сколько их?" << endl;
+	cin >> ScoreLvlOne;
+	cout << "Твои ключи за первый уровень: " << ScoreLvlOne << endl;
+	cout << "Дальше ты переходишь на второй уровень!\n" << endl;
+	cout << "Здесь на уровне спокойно, но нужно найти сокровища, а там будет какое-то количество ключей." << endl;
+	cout << "Молодец! Ты нашел сокровище. Сколько ключей тебе выпало?" << endl;
+	cin >> ScoreLvlTwo;
+	cout << "Хорошо, за второй уровень у тебя есть " << ScoreLvlTwo << " ключей." << endl;
+	cout << "Теперь у тебя за два уровня есть " << ScoreLvlOne + ScoreLvlTwo << " ключей." << endl;
+	cout << "А вот и последний уровень, сразу скажу он сложный! Тебе нужно набрать как можно больше ключей, но у тебя несколько попыток." << endl;
+	cout << "Босс!" << endl;
+	cout << "Уклоняйся!" << endl;
+	cout << "Ты погиб! У тебя осталась одна попытка!" << endl;
+	cout << "Босс!" << endl; 
+	cout << "Уклоняйся!" << endl;
+	cout << "Молодец! Теперь нанеси удар!" << endl;
+	cout << "Ты прошел три уровня! Поздравляю!" << endl;
+	cout << "И так сколько у тебя получилось достать ключей на третьем уровне?" << endl;
+	cin >> ScorelvlThree;
+	cout << "Количество ключей за третий уровень: " << ScorelvlThree << endl;
+	cout << "Общее количество ключей: " << ScoreLvlOne + ScoreLvlTwo + ScorelvlThree << endl;
+	cout << "Теперь посчитаем количество очков за все собраные ключи. Один ключ равен 15 очкам." << endl;
+	cout << "Вот итоги: " << ((ScoreLvlOne * score) + (ScoreLvlTwo * score) + (ScorelvlThree * score)) / 3 << endl;
+
+	return 0;
+
+
+
+   
+}
