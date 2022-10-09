@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float a, b;
+    setlocale(LC_ALL, "Russian");
+    cout << "Вычисление частного." << endl;
+    cout << "Введите в одной строке делимое и делитель, затем нажмите  'Enter' : " << endl;
+    cin >> a;
+    cin >> b;
+    if (b != 0)
+    {
+        cout << "Вот результат: " << a / b << endl;
+    }
+    else
+    {
+        cout << "Вы ошиблись. Делитель не должен быть равен нулю." << endl;
+    }
+    return 0;
+}
