@@ -1,0 +1,42 @@
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    string username;
+    string password;
+    bool success;
+    cout << "\tGame Disegner's Network\n";
+    do
+    {
+        cout << "\n Username: ";
+        cin >> username;
+        cout << "\nPassword: ";
+        cin >> password;
+
+        if (username == "Brizgly" && password == "Defender1")
+        {
+            cout << "\n Hey. Briz.";
+            success = true;
+        }
+        else if (username == "Maikl" && password == "Duglas")
+        {
+            cout << "\n How goes it. Will?";
+            success = true;
+        }
+        else if (username == "guest" && password == "guest")
+        {
+            cout << "\nWelcome guest.";
+            success = true;
+        }
+        else
+        {
+            cout << "\n You login failed.";
+            success = false;
+        }
+    } while (!success);
+    return 0;
+
+}
