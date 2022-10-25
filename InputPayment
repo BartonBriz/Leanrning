@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    setlocale(LC_ALL, "Russian");
+
+    double payment = 0;
+    int exit = 1;
+
+    while (exit == 1)
+    {
+        cout << "Введите сумму для пополнения счета: ";
+        cin >> payment;
+        cout << "Оплатить и выйти - нажмите 0. Изменить сумму - нажмите 1\n";
+        cin >> exit;
+        if (exit != 1)
+        {
+            cout << "Вы пополнили сумму на " << payment << " $ \n";
+            cout << "Хорошего дня!";
+        }
+        else if (exit == 1)
+        {
+            cout << "Измените сумму пополнения: \n";
+            cin >> payment;
+            cout << "Вы изменили сумму пополнения на " << payment << " $. Хорошего дня!";
+        }
+        return 0;
+    }
+    
+}
