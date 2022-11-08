@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    const int MAX_ITEM = 10;
+    string inventory[MAX_ITEM];
+    int numItems = 0;
+    inventory[numItems++] = "Меч";
+    inventory[numItems++] = "Броня";
+    inventory[numItems++] = "Щит";
+    cout << "Твои вещи: \n";
+    for (int i = 0; i < numItems; i++)\
+    {
+        cout << inventory[i] << endl;
+    }
+    cout << "\nВы обмениваете свой меч на боевой топор.\n";
+        inventory[0] = "Боевой топор";
+        cout << "\nТвои вещи: \n";
+        for (int i = 0; i < numItems; i++)
+        {
+            cout << inventory[i] << endl;
+        }
+        cout << "\nНазвание предмета " << inventory[0] << " есть.\n";
+        cout << inventory[0].size() << " Букв в нем.\n";
+            cout << "\nВы нашли лечебное зелье.";
+            if (numItems < MAX_ITEM)
+            {
+                inventory[numItems++] = "Лечебное зелье";
+            }
+            else
+            {
+                cout << "У вас слишком много предметов, и вы не можете внести еще один.";
+            }
+            cout << "\nТвои вещи: \n";
+            for (int i = 0; i < numItems; i++)
+            {
+                cout << inventory[i] << endl;
+            }
+    return 0;
+    
+}
