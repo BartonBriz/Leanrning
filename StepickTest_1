@@ -1,0 +1,19 @@
+//По данному целому числу N распечатайте все квадраты натуральных чисел, не превосходящие N, в порядке возрастания.
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int n, sum;
+	cin >> n;
+	sum = (n / n) ;
+	while (pow(sum,2) <= n)
+	{
+		
+		cout << pow(sum, 2) << " ";
+		sum++;
+	}
+	return 0;
+}
