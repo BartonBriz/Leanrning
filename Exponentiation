@@ -1,0 +1,23 @@
+// TestWhile3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//По данному числу N распечатайте все целые степени двойки, не превосходящие N, в порядке возрастания.
+
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N;
+    int n = 0;
+    int step = 2;
+    while (N >= pow(step,n) )
+    {
+        cout << pow(step, n) << " ";
+        n++;
+    }
+
+    return 0;
+}
