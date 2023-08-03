@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main()
+
+{
+
+    int purchaseAmount = 0;
+
+    int totalPrice;
+    int totalPrice1;
+    int totalPrice2;
+
+    cin >> totalPrice >> totalPrice1 >> totalPrice2 ;
+    do
+    { 
+    cout << totalPrice * 0.15 << endl;
+    cout << totalPrice1 * 0.15 << endl;
+    cout << totalPrice2 * 0.15 << endl;
+    
+    }
+    
+    while(purchaseAmount);
+
+    //место для вашего кода
+
+    
+
+    
+
+    return 0;
+
+}
+
