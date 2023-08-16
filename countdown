@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+/*    int n;
+    cin >> n;
+    
+    while (n >0) {
+        cout << n << endl;
+        //num--;
+        
+        if (n % 5 == 0){
+            cout << "Beep"<<endl;
+        }
+        
+        n--;
+    }
+    */
+    //P.s Michael Rudenok project "countdown"
+
+int n;
+cin >> n;
+for (int i = 0; i < n;){
+cout << n << endl;
+if (n % 5 == 0)
+{
+    cout << "Веер" << endl;
+}
+n--;
+}
+return 0;
+}
